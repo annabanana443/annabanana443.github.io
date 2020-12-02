@@ -1,0 +1,153 @@
+body {
+    margin: auto;
+    background: #F0F0F0;
+    color: #141414;
+}
+html {
+    overflow-y: scroll;
+  }
+ul { 
+    padding:0; 
+    margin: 0 
+}
+header {
+    width: 100%;
+    background: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #141414;
+    position: fixed;
+}
+.right {
+    display: flex;
+}
+.right img {
+    height: 30px;
+    padding-left: 20px;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    color: #141414;
+    font-size: 18px;
+}
+nav a {
+    text-decoration: none;
+    color: #141414;
+}
+nav li::after {
+    content: "";
+    transition: 0.2s all ease-in-out;
+    background: repeat 0 0 #141414;
+    display: block;
+    height: 2px;
+    width: 0;
+}
+nav li:hover::after {
+    width: 100%;
+}
+nav {
+    padding-right: 75px;
+    z-index: 1;
+}
+#logo a {
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 75px;
+    text-decoration: none;
+    color: #141414;
+}
+.content {
+    display: flex;
+    padding: 75px;
+    justify-content: space-between;
+}
+.side-bar {
+    padding-right: 25px;
+    padding-top: 75px;
+    width: 400px;
+    border-right: 2px solid #141414;
+}
+.title-2 {
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #141414;
+    line-height: 20px;
+}
+.filter-tags li {
+    list-style: none;
+    padding-bottom: 0px;
+}
+.filter-tags button{
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    padding: 0px;
+}
+.filter-tags button::after {
+    content: "";
+    transition: 0.2s all ease-in-out;
+    background: repeat 0 0 #141414;
+    display: block;
+    height: 2px;
+    width: 0;
+}
+.filter-tags button:hover::after {
+    width: 100%;
+}
+button {
+    display: inline-block;
+    border: hidden;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+}
+
+.main-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 75px;
+    padding-left: 25px;
+}
+.main-bar::after {
+    content: "";
+    flex: auto;
+}
+.book img{
+    height: 250px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    z-index: -1;
+    transition: 0.175s all ease-in-out; 
+}
+.book img:hover{
+    transform: scale(1.05); 
+}
+.dark-mode-body {
+    background: #a5a5a5;
+}
+.dark-mode-lines {
+    border-bottom: 2px solid #F0F0F0;
+}
+#toggleButton {
+    transition: 0.1s all ease-in-out; 
+}
+#toggleButton:hover {
+    transform: scale(1.1); 
+}
+.show {
+    display: block;
+  }

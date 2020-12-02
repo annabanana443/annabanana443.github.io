@@ -1,0 +1,116 @@
+body {
+    margin: auto;
+    background: #F0F0F0;
+}
+html {
+    overflow-y: scroll;
+  }
+ul { 
+    padding:0; 
+    margin: 0 
+}
+header {
+    width: 100%;
+    background: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #141414;
+    position: fixed;
+}
+.right {
+    display: flex;
+}
+.right img {
+    height: 30px;
+    padding-left: 20px;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    color: #141414;
+    font-size: 18px;
+}
+nav a {
+    text-decoration: none;
+    color: #141414;
+}
+nav {
+    padding-right: 75px;
+}
+#logo a {
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 75px;
+    text-decoration: none;
+    color: #141414;
+}
+#toggle-dark-light {
+    height: 10px;
+}
+.content {
+    display: flex;
+    padding: 75px;
+    padding-top: 160px;
+    justify-content: center;
+}
+table {
+    border-collapse: collapse;
+    width: 700px;
+    height: 500px;
+}
+td, th {
+    border: 2px solid #141414;
+    padding: 1rem;
+    text-align: left;
+    font-family: "Arial", sans-serif;
+    vertical-align: top;
+}
+th {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #141414;
+    font-weight: 700;
+}
+td {
+    font-size: 20px;
+}
+button {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+}
+.dark-mode-body {
+    background: #a5a5a5;
+}
+.dark-mode-lines {
+    border-bottom: 2px solid #F0F0F0;
+}
+#toggleButton {
+    transition: 0.1s all ease-in-out; 
+}
+#toggleButton:hover {
+    transform: scale(1.1); 
+}
+nav li::after {
+    content: "";
+    transition: 0.2s all ease-in-out;
+    background: repeat 0 0 #141414;
+    display: block;
+    height: 2px;
+    width: 0;
+}
+nav li:hover::after {
+    width: 100%;
+}

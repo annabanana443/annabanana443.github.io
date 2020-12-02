@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="right">
+                <div id="logo"><a href="index.html">My Bookshelf</a></div>
+                <button id="toggleButton"><img src="assets/img/dark mode button.svg"></button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="side-bar">
+                <div class="title-2">Filter by (doesnt work ;-; )</div>
+                <ul class="filter-tags">
+                    <li><button class="btn" onclick="filterSelection('all')"> All</button></li>
+                    <li><button class="btn" onclick="filterSelection('fiction')">Fiction</button></li>
+                    <li><button class="btn" onclick="filterSelection('japanese')">Japanese</button></li>
+                    <li><button class="btn" onclick="filterSelection('YA')">Young Adult</button></li>
+                </ul>
+            </div>
+            <div class="main-bar">
+                <div class="book japanese">
+                    <a href = "no longer human.html"><img src="assets/img/no longer human.png" alt="no longer human cover"></a>
+                </div>
+                <div class="book fiction">
+                    <a href = "no longer human.html"><img src="assets/img/severance.png" alt="severance cover"></a>
+                </div>
+                <div class="book fiction YA">
+                    <a href = "no longer human.html"><img src="assets/img/radio silence.png" alt="radio silence cover"></a>
+                </div>
+                <div class="book japanese">
+                    <a href = "no longer human.html"><img src="assets/img/breast and eggs.png" alt="breast and eggs cover"></a>
+                </div>
+                <div class="book">
+                    <a href = "no longer human.html"><img src="assets/img/no longer human.png" alt="no longer human cover"></a>
+                </div>
+                <div class="book fiction">
+                    <a href = "no longer human.html"><img src="assets/img/severance.png" alt="severance cover"></a>
+                </div>
+                <div class="book fiction YA">
+                    <a href = "no longer human.html"><img src="assets/img/radio silence.png" alt="radio silence cover"></a>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
