@@ -114,3 +114,11 @@ nav li::after {
 nav li:hover::after {
     width: 100%;
 }
+p {
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 75px;
+    text-decoration: none;
+    color: #141414;
+}
